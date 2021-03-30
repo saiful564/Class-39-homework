@@ -1,359 +1,277 @@
 *{
     margin: 0;
-    padding: 0;
-}
+    padding: 0; 
+ }
+ .container{
+     width: 1124px;
+     margin: 0 auto;
+     text-align: center;
+    
+ }
+ .clearfix::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .right{
+     float: right;
+ }
+ .left{
+     float: left;
+ }
+ .textcenter{
+     text-align: center;
+ } 
 
-.clearFix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-/* mainDiv */
-
-
-.mainDiv{
-    width: 1224px;
-    margin: 40px auto;
-}
-.header {
-    background-color: #20c2a3;
-    padding: 0px 27px;
-}
-.logo{
-    float: left;
-}
-.logo h1 {
-    margin-top: 16px;
-    margin-left: 10px;
-    color: #fff;
-}
-.logoRight{
-    float: right;
-}
-.logoRight ul{
-    list-style: none;
-}
-.logoRight ul li{
-    display: inline-block;
-}
-.logoRight ul li a {
-    display: inline-block;
+ /* header */
+ .header_s{
+     background: #22C3A3;
+    
+ }
+ /* logo */
+ .header_left.left a {
+    font-size: 20px;
     text-decoration: none;
-    padding: 25px 20px;
     color: #fff;
-    background-color: #20c2a3;
-    font-size: 19px;
-    transition: .5s;
+    
 }
-.logoRight ul li a:hover{
-   color: aqua;
+.header_left.left{
+    padding: 13px 0;
 }
+/* manu */
+.header_righr{}
+.header_righr ul{}
+.header_righr ul li{
+    display: inline-block;
+}
+.header_righr ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 17px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.header_righr ul li a:hover{}
+
 
 /* slider */
-
 .slider{
-    background: url("https://i.ibb.co/m5mXnL1/image.jpg");
-    background-size: cover;
-    padding: 150px 0;
-    text-align: center;
+    background: url(https://i.ibb.co/K5WYX2z/slider.jpg) no-repeat center;
+    background-size:cover;
+    padding: 100px 0;
     color: #fff;
 }
 .slider h1 {
-    margin-bottom: 15px;
-    word-spacing: 13px;
+    text-transform: uppercase;
+    font-size: 39px;
+    font-weight: bold;
+    margin: 20px 0;
 }
-.slider p{
-    font-size: 18px;
-    margin-bottom: 10px;
+.slider p {
+    font-size: 20px;
+    margin-bottom: 79px;
 }
-.slider .button {
-    padding: 10px;
-    font-size: 18px;
+.slider a {
+    text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid #fff;
-    display: inline-block;
-    margin-top: 15px;
     color: #fff;
-    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 20px 25px;
+    
 }
 
-/* cervice */
-.cervice {
-    margin: 40px;
-    padding-bottom:100px;
-    border-bottom: 2px solid #09bd9a;
+/* service */
+.services{
+    color: #606060;
+    border-bottom: 2px solid #0BBF9A;
 }
-
-.ourCervicce {
+.servic_title {
     text-align: center;
+    margin: 48px 0;
 }
-
-.ourCervicce p {
-    margin-top: 12px;
-}
-
-.cerviceContent {
-    display: inline-block;
-    width: 22%;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 50px;
-}
-
-.web .iicon {
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: #09bd9a;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.web .iicon:hover{
-    transform: scale(1.2);
-}
-
-
-/* cerviceSection */
-
-.happ{
-    margin: 30px;
-}
-
-
-.about {
-    text-align: center;
-}
-.about h1 {
+.servic_title h2 {
     margin-bottom: 10px;
 }
 
-.imag{
+.single_servic {
     float: left;
+    width: 25%;
+    padding: 15px 14px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+.single_servic h2 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+.single_servic p{}
+.single_servic i {
+    font-size: 22px;
+    color: #0BBF9A;
+    margin-bottom: 17px;
+}
+
+
+/* about */
+.about{
+    padding: 50px 0;
+    color: #606060;
+}
+.content_left img {
+    width: 100%;
+}
+
+.content_left{
     width: 40%;
+
 }
-.imag img{
-    max-width: 100%;
+.content_right {
+    width: 60%;
+    text-align: left;
+    padding-left: 42px;
+    box-sizing: border-box;
 }
-.imagContent {
-    float: right;
-    width: 58%;
-    margin-left: 20px;
-    margin-top: 10px;
+.content_right h2{
     margin-bottom: 10px;
 }
-.look {
-    margin-top: 12px;
+.content_right p{
+    margin-bottom: 10px;
+}
+.about_title {
+    margin-bottom: 57px;
+}
+.about_title h2 {
+    margin-bottom: 10px;
 }
 
-.imagContent p {
-    line-height: 20px;
-}
 
-/* aboutBottom */
-
-.aboutBottom{
-    background-color: #f6f6f7;
-    padding: 70px 0;
+.contact_title h2{
+  margin-bottom:10px;
 }
-.contact {
-    text-align: center;
+.single_contact {
+    width: 33%;
+    float: left;
+    margin: 48px 0;
 }
-.contact h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-.contact p {
+.single_contact p {
+    color: #606060;
     font-size: 15px;
+    font-weight: normal;
+}
+.single_contact i {
+    color: #0BBF9A;
+    margin-bottom: 14px;
 }
 
-.call {
-    display: inline-block;
-    width: 32%;
-    text-align: center;
-    margin-top: 60px;
+.footer_top{
+  background:#0BBF9A
 }
-.call .iccon {
-    font-size: 25px;
-    color: #09bd9a;
-    margin-bottom: 15px;
-    transition: .5s;
-    cursor: pointer;
+.footermanu{}
+.footermanu ul{}
+.footermanu ul li{
+  display:inline-block
 }
-.call .iccon:hover{
-    transform: scale(1.2);
+.footermanu ul li a{
+   display:inline-block;
+     padding:15px 5px;
+  color:#fff;
+  font-size:20px
 }
-.call h4 {
-    margin-bottom: 10px;
-}
-
-
-/* socialMenu */
-
-.socialMenu{
-    background-color: #09bd9a;
-    padding: 20px;
-}
-.social {
-    text-align: center;
-}
-.social ul li{
-    display: inline-block;
-}
-.social ul li a{
-    display: inline-block;
-    padding: 0 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    transition: .5s;
-}
-.social ul li a:hover{
-    transform: scale(1.3);
+.footerarea{
+    background:#222222;
+    line-height: 25px;
+    height: 25px;
+    color: #606060;
+    padding: 10px 0;
 }
 
-/* footer */
-.footer{
-    background-color: #171717;
-    text-align: center;
-}
 
-.hhhhhmmm p{
-    color: #fff;
-    padding:10px 0;
-}
 
-/* responsive */
+
 
 @media (max-width:1224px) {
-    .mainDiv{
+   
+    .container {
         width: 100%;
         max-width: 100%;
     }
 }
 
 @media (max-width:1060px) {
+    .header_left.left {
+        padding: 13px 0;
+            padding-left: 0px;
+        padding-left: 10px;
+    }
 
-    .imag img {
-        max-width: 80%;
-        margin-top: 60px;
-    }
-    .imagContent {
-        margin-left: 0;
-    }
+   
 }
 @media (max-width:900px) {
-   
-.logo {
+  .single_servic {
+    width: 48%;
 
-    float: inherit;
-    text-align: center;
-}
-.logoRight {
-    float: none;
-}
-.logoRight ul {
-    text-align: center;
-}
-.slider {
-    padding: 70px 0;
-}
-.cerviceContent {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-.aboutBottom {
-    padding: 30px 0;
-}
-.call {
-    margin-top: 30px;
-}
-.call .iccon {
-    font-size: 20px;
 }
 
-.socialMenu {
-    padding: 8px;
+@media (max-width:787px) {
+  .single_servic {
+    width: 100%;
 }
-.social ul li a {
+.about_title p {
     padding: 0 10px;
-    font-size: 17px;
 }
-.hhhhhmmm p {
-    padding: 8px 0;
-    font-size: 12px;
-}
-
-}
-
-@media (max-width:715px) {
-    .slider h1 {
-        word-spacing: 9px;
-        font-size: 22px;
-    }
-    
-    .slider p {
-        font-size: 15px;
-    }
-    
-        .slider .button {
-            font-size: 14px;
-            text-decoration: none;
-            border-radius: 2px;
-        }
-        .cervice {
-            padding-bottom: 50px;
-        }
-        .cervice {
-            margin: inherit;
-        }
-
-        .web .iicon {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-
-.web h1 {
-    font-size: 23px;
-    margin-bottom: 10px;
-}
-.contact h1 {
-    font-size: 31px;
-    margin-bottom: 12px;
-}
-.contact p {
-    font-size: 12px;
+.contact_title p {
+    padding: 0 10px;
 }
 
 }
 @media (max-width:633px) {
-    .cerviceContent {
-        width: 20%;
-
+    .logoRight ul li a {
+    
+        padding: 24px 8px;
+   
+    }
+    .content_left {
+        width: 100%;
+    }
+    .content_right {
+        width: 100%;
+        padding: 28px;
+    }
+   
+    
+}
+@media (max-width:585px) {
+    .header_left.left {
+     
+        width: 100%;
+        text-align: center;
+    }
+    .header_righr {
+        width: 100%;
+        text-align: center;
+        float: inherit;
+    }
+    
+}
+@media (max-width:480px) {
+    .header_righr ul li a {
+        font-size: 12px;
+        padding: 0 7px;
+     
+    }
+    .single_contact {
+        width: 100%;
+        float: left;
+        margin: 23px 0;
+    }
+    
 }
 @media (max-width:380px) {
-    .logo h1 {
-        font-size: 25px;
-    }
-    .logoRight ul li a {
-        padding: 10px 20px;
+    .footerarea p {
         font-size: 14px;
     }
-    .cerviceContent {
-        width: 45%;
-    }
-    .imag {
-        width: 100%;
-        text-align: center;
-    }
-    .imagContent {
-        width: 100%;
-        text-align: center;
-    }
-    .call {
-        width: 100%;
-        padding-bottom: 20px;
-    }
+    
 }
 
+}
